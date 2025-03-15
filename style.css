@@ -1,0 +1,66 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 0;
+
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bleach.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    transition: 1s ease-in-out;
+}
+
+.slider-container {
+    width: 673px;
+    height: 379px;
+    position: relative;
+    z-index: 10;
+}
+.image-wraper {
+    width: 673px;
+    height: 379px;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    position: absolute;
+    transition: 1s all;
+}
+img {
+    width: 673px;
+    height: 100%;
+}
+.next, .prev {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: none;
+}
+.next {
+    right: -40px;
+}
+.prev {
+    left: -40px;
+}
